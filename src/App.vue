@@ -25,9 +25,9 @@
                 <div class="material-icons up">arrow_upward</div>
                 <br>
                 <br>
-                    Hello, ask something to get started
+                    Bonjour, posez moi une question pour démarrer
 
-                    <p class="mdc-typography--body2">You can type "Hello" for example. Or just press on the microphone to talk</p>
+                    <p class="mdc-typography--body2">Vous pouvez saisir "Salut" par exemple.</p>
             </h1>
         </div>
 
@@ -39,7 +39,7 @@
                 <br>
                     Oh, no!
 
-                    <p class="mdc-typography--body2">It looks like you are not connected to the internet, this webpage <b>requires</b> internet connection, to process your requests</p>
+                    <p class="mdc-typography--body2">Votre connexion internet semble inactif. Cette application <b>a besoin</b> d'une connexion internet pour traiter vos demandes</p>
             </h1>
         </div>
 
