@@ -49,7 +49,7 @@
 &lt;iframe
     width="350"
     height="430"
-    src="https://mishushakov.github.io/dialogflow-widget/#/{{token}}?mute={{mute}}&bottom={{bottom}}" /&gt;</pre>
+    src="https://chege1805.github.io/dialogflow-widget/#/{{token}}?mute={{mute}}&bottom={{bottom}}" /&gt;</pre>
 
                     <p class="mdc-text-field-helptext" aria-hidden="true">
                         Your token will not be saved anywhere. You can get it in <a class="flow" href="https://console.dialogflow.com">Dialogflow Dashboard</a>
@@ -58,7 +58,7 @@
                     <button @click="copy()" class="mdc-button mdc-ripple-upgraded--background-active-fill">
                         Copy
                     </button>
-                    <a class="mdc-button mdc-button--raised" href="https://github.com/MishUshakov/dialogflow-widget">
+                    <a class="mdc-button mdc-button--raised" href="https://github.com/chege1805/dialogflow-widget">
                         GitHub
                     </a>
 
@@ -67,7 +67,7 @@
                     <h1 class="dftext preview">Preview</h1>
                     <iframe
                         class="widgetframe"
-                        :src="'https://mishushakov.github.io/dialogflow-widget/#/' + token + '?mute=' + mute + '&bottom=' + bottom" /> <!-- Replace my token with yours after #/ -->
+                        :src="'https://chege1805.github.io/dialogflow-widget/#/' + token + '?mute=' + mute + '&bottom=' + bottom" /> <!-- Replace my token with yours after #/ -->
                 </div>
             </div>
         </div>
@@ -145,9 +145,9 @@ export default {
     name: 'landing',
     data: function(){
         return {
-            token: '9d686a47b1de48bab431e94750d1cd87',
-            mute: false,
-            bottom: false
+            token: '211ff0f04c874026805218e6fd88720b',
+            mute: true,
+            bottom: true
         }
     },
     methods: {

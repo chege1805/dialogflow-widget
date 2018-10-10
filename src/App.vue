@@ -5,7 +5,7 @@
     <div class="query" :class="{'bottom': bottom}">
         <div class="wrapper" v-if="micro == false">
             <i class="material-icons iicon" @click="microphone(true)">mic</i>
-            <input aria-label="Ask me something" autocomplete="off" v-model="query" class="queryform" @keyup.enter="submit()" placeholder="Ask me something..." type="text">
+            <input aria-label="Posez moi vos questions..." autocomplete="off" v-model="query" class="queryform" @keyup.enter="submit()" placeholder="Posez moi vos questions..." type="text">
             <i class="material-icons iicon t2s" @click="mute(true)" v-if="muted == false">volume_up</i>
             <i class="material-icons iicon t2s" @click="mute(false)" v-else>volume_off</i>
         </div>
@@ -25,9 +25,9 @@
                 <div class="material-icons up">arrow_upward</div>
                 <br>
                 <br>
-                    Hello, ask something to get started
+                    Bonjour, Posez moi une question pour démarrer
 
-                    <p class="mdc-typography--body2">You can type "Hello" for example. Or just press on the microphone to talk</p>
+                    <p class="mdc-typography--body2">Vous pouvez saisir "Salut" par exemple.</p>
             </h1>
         </div>
 
