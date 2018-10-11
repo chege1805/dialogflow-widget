@@ -58,7 +58,7 @@
                     <button @click="copy()" class="mdc-button mdc-ripple-upgraded--background-active-fill">
                         Copy
                     </button>
-                    <a class="mdc-button mdc-button--raised" href="https://github.com/chege1805/dialogflow-widget">
+                    <a class="mdc-button mdc-button--raised" href="https://chege1805.github.io/dialogflow-widget">
                         GitHub
                     </a>
 

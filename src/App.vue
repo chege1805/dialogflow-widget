@@ -25,8 +25,7 @@
                 <div class="material-icons up">arrow_upward</div>
                 <br>
                 <br>
-                    Bonjour, Posez moi une question pour démarrer
-
+                    Bonjour, posez moi une question pour démarrer
                     <p class="mdc-typography--body2">Vous pouvez saisir "Salut" par exemple.</p>
             </h1>
         </div>
@@ -39,7 +38,7 @@
                 <br>
                     Oh, no!
 
-                    <p class="mdc-typography--body2">It looks like you are not connected to the internet, this webpage <b>requires</b> internet connection, to process your requests</p>
+                    <p class="mdc-typography--body2">Votre connexion internet semble inactive. Cette application <b>a besoin</b> d'une connexion internet pour traiter vos demandes</p>
             </h1>
         </div>
 
@@ -364,7 +363,7 @@ export default {
         return {
             answers: [],
             query: '',
-            speech: 'Go ahead, im listening...',
+            speech: 'Allez-y, je vous écoute...',
             micro: false,
             muted: false,
             online: navigator.onLine,
@@ -397,14 +396,14 @@ export default {
                 this.handle(response) // <- handle the response in handle() method
 
                 this.query = ''
-                this.speech = 'Go ahead, im listening...' // <- reset query and speech
+                this.speech = '\'Allez-y, je vous écoute...' // <- reset query and speech
             })
         },
         handle(response){
             if(response.result.fulfillment.speech || response.result.fulfillment.messages[0].type == 'simple_response'){
                 let speech = new SpeechSynthesisUtterance(response.result.fulfillment.speech || response.result.fulfillment.messages[0].textToSpeech)
                 speech.voiceURI = 'native'
-                speech.lang = 'en-GB' // <- Nice british accent
+                speech.lang = 'fr-FR'
 
                 if(this.muted == false) window.speechSynthesis.speak(speech) // <- Speech output if microphone is allowed
             }
@@ -424,7 +423,7 @@ export default {
                 let recognition = new webkitSpeechRecognition() // <- chrome speech recognition
 
                 recognition.interimResults = true
-                recognition.lang = 'en-US'
+                recognition.lang = 'fr-FR'
 			    recognition.start()
 
                 recognition.onresult = function(event){
