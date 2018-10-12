@@ -384,7 +384,7 @@ export default {
     watch: {
         answers: function(val){
             setTimeout(() => { 
-                document.querySelector('.copyright').scrollIntoView({ 
+                document.querySelector('.bottom').scrollIntoView({
                     behavior: 'smooth' 
                 })
             }, 2) // if new answers arrive, wait for render and then smoothly scroll down to .copyright selector, used as anchor
