@@ -143,7 +143,11 @@
         </table>
 
         <br>
-        <a id="bottom"></a>
+        <p class="copyright" :class="{'marged': bottom}" v-if="answers.length > 0" id="bottom"></p>
+    </main>
+</section>
+</template>
+
     </main>
 </section>
 </template>
@@ -384,7 +388,7 @@ export default {
     watch: {
         answers: function(val){
             setTimeout(() => { 
-                document.querySelector('.bottom').scrollIntoView({
+                document.querySelector('.copyright').scrollIntoView({
                     behavior: 'smooth' 
                 })
             }, 2) // if new answers arrive, wait for render and then smoothly scroll down to .copyright selector, used as anchor
